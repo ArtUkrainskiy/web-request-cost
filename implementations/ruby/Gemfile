@@ -1,0 +1,10 @@
+# Bare Ruby variant of spec/spec.md: Rack app on Puma, no framework, no ORM.
+source "https://rubygems.org"
+
+ruby "4.0.7"
+
+gem "puma", "8.0.2"
+gem "rack", "3.2.7"
+gem "pg", "1.7.0"
+gem "trilogy", "2.13.1"
+gem "connection_pool", "3.0.2"

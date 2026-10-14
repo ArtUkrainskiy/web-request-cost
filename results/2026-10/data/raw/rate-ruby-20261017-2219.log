@@ -1,0 +1,8 @@
+series rate-ruby: 2 stack x db sweeps (C = 50) x 3 passes, stack on 8-11,24-27 -> ~/web-request-cost/harness/results/rate-ruby-20261017-2219.jsonl
+22:21:16 [1/6] pass 1 ruby mysql ok
+22:23:10 [2/6] pass 1 ruby pgsql ok
+22:25:03 [3/6] pass 2 ruby mysql ok
+22:26:57 [4/6] pass 2 ruby pgsql ok
+22:28:51 [5/6] pass 3 ruby mysql ok
+22:30:45 [6/6] pass 3 ruby pgsql ok
+done: 18 runs recorded

@@ -1,0 +1,14 @@
+{
+    "require": {
+        "roadrunner/http": "^4.2",
+        "nyholm/psr7": "^1.8"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "audit": {
+            "ignore": {
+                "GHSA-g9pc-8g42-g6vq": "False positive: the range < 2025.1.0 also matches RoadRunner 3.x, which is not affected (roadrunner-server/roadrunner#2422)"
+            }
+        }
+    }
+}

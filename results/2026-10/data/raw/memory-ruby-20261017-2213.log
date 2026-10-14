@@ -1,0 +1,8 @@
+series memory-ruby: 2 stack x db sweeps (C = 1 10 50 200) x 3 passes, stack on 8-11,24-27 -> ~/web-request-cost/harness/results/memory-ruby-20261017-2213.jsonl
+22:14:05 [1/6] pass 1 ruby mysql ok
+22:15:08 [2/6] pass 1 ruby pgsql ok
+22:16:12 [3/6] pass 2 ruby mysql ok
+22:17:15 [4/6] pass 2 ruby pgsql ok
+22:18:18 [5/6] pass 3 ruby mysql ok
+22:19:22 [6/6] pass 3 ruby pgsql ok
+done: 24 runs recorded

@@ -1,0 +1,22 @@
+fpm pgsql: execute <unnamed> 0, execute named 40, simple statements 0, distinct names 4
+fpm mysql: select 41  
+franken pgsql: execute <unnamed> 0, execute named 40, simple statements 0, distinct names 40
+franken mysql: select 41  
+rr pgsql: execute <unnamed> 0, execute named 40, simple statements 0, distinct names 8
+rr mysql: select 41  
+swoole pgsql: execute <unnamed> 0, execute named 40, simple statements 0, distinct names 37
+swoole mysql: select 41  
+go pgsql: execute <unnamed> 0, execute named 40, simple statements 1, distinct names 4
+go mysql: select 41  stmt_close 40  stmt_execute 40  stmt_prepare 40  
+node-http pgsql: execute <unnamed> 40, execute named 0, simple statements 0, distinct names 1
+node-http mysql: select 41  
+python pgsql: execute <unnamed> 0, execute named 40, simple statements 10, distinct names 4
+python mysql: select 41  
+rust pgsql: execute <unnamed> 0, execute named 40, simple statements 0, distinct names 40
+rust mysql: admin_commands 10  select 41  stmt_execute 40  stmt_prepare 40  
+ruby pgsql: execute <unnamed> 40, execute named 0, simple statements 0, distinct names 1
+ruby mysql: select 41  
+java pgsql: execute <unnamed> 0, execute named 40, simple statements 1, distinct names 4
+java mysql: admin_commands 1  select 41  
+dotnet pgsql: execute <unnamed> 40, execute named 0, simple statements 10, distinct names 1
+dotnet mysql: admin_commands 10  select 41  set_option 10  

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.tsbuildinfo
+node_modules/
+vendor/
+.venv/
+.python/
+target/
+out/
+bin/
+obj/
+/implementations/go/blog
+/harness/upstream/upstream
+/.build/
+/harness/results/
+.idea/

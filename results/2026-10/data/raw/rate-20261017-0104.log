@@ -1,0 +1,76 @@
+series rate: 24 stack x db sweeps (C = 50) x 3 passes, stack on 8-11,24-27 -> ~/web-request-cost/harness/results/rate-20261017-0104.jsonl
+01:06:00 [1/72] pass 1 java pgsql ok
+01:07:54 [2/72] pass 1 node-http mysql ok
+01:09:48 [3/72] pass 1 dotnet mysql ok
+01:11:42 [4/72] pass 1 rust mysql ok
+01:13:37 [5/72] pass 1 java mysql ok
+01:15:30 [6/72] pass 1 node-fastify mysql ok
+01:17:24 [7/72] pass 1 rr mysql ok
+01:19:18 [8/72] pass 1 node-http pgsql ok
+01:21:12 [9/72] pass 1 go mysql ok
+01:23:06 [10/72] pass 1 swoole pgsql REJECTED: REJECTED swoole pgsql c=50: load result: {"requests":68409,"duration_us":19964853,"non2xx":643,"errors":0,"p50_us":2584575,"p90_us":4435967,"p99_us":4845567,"max_us":4939776,"s200":67766,"s401":643,"s404":0,"s5xx":0,"sother":0,"body_bytes":619715361} 
+01:25:00 [11/72] pass 1 fpm pgsql ok
+01:26:53 [12/72] pass 1 swoole mysql ok
+01:28:47 [13/72] pass 1 fpm mysql ok
+01:30:41 [14/72] pass 1 ruby mysql ok
+01:32:35 [15/72] pass 1 rust pgsql ok
+01:34:29 [16/72] pass 1 node-fastify pgsql ok
+01:36:23 [17/72] pass 1 dotnet pgsql ok
+01:38:16 [18/72] pass 1 python pgsql ok
+01:40:11 [19/72] pass 1 python mysql ok
+01:42:04 [20/72] pass 1 franken mysql ok
+01:43:57 [21/72] pass 1 go pgsql ok
+01:45:51 [22/72] pass 1 franken pgsql ok
+01:47:45 [23/72] pass 1 ruby pgsql ok
+01:49:39 [24/72] pass 1 rr pgsql ok
+01:51:33 [25/72] pass 2 python mysql ok
+01:53:27 [26/72] pass 2 swoole mysql ok
+01:55:21 [27/72] pass 2 fpm pgsql ok
+01:57:15 [28/72] pass 2 node-fastify pgsql ok
+01:59:09 [29/72] pass 2 python pgsql ok
+02:01:03 [30/72] pass 2 franken mysql ok
+02:02:57 [31/72] pass 2 rr pgsql ok
+02:04:50 [32/72] pass 2 ruby mysql ok
+02:06:44 [33/72] pass 2 rust mysql ok
+02:08:38 [34/72] pass 2 java pgsql ok
+02:10:32 [35/72] pass 2 node-fastify mysql ok
+02:12:26 [36/72] pass 2 rust pgsql ok
+02:14:20 [37/72] pass 2 java mysql ok
+02:16:14 [38/72] pass 2 node-http pgsql ok
+02:18:07 [39/72] pass 2 ruby pgsql ok
+02:20:02 [40/72] pass 2 dotnet mysql ok
+02:21:56 [41/72] pass 2 swoole pgsql REJECTED: REJECTED swoole pgsql c=50: load result: {"requests":75755,"duration_us":19965094,"non2xx":714,"errors":0,"p50_us":6123,"p90_us":1994751,"p99_us":2207743,"max_us":2299904,"s200":75041,"s401":714,"s404":0,"s5xx":0,"sother":0,"body_bytes":686435189} 
+02:23:49 [42/72] pass 2 go pgsql ok
+02:25:43 [43/72] pass 2 go mysql ok
+02:27:37 [44/72] pass 2 rr mysql ok
+02:29:30 [45/72] pass 2 node-http mysql ok
+02:31:25 [46/72] pass 2 dotnet pgsql ok
+02:33:18 [47/72] pass 2 franken pgsql ok
+02:35:12 [48/72] pass 2 fpm mysql ok
+02:37:06 [49/72] pass 3 swoole pgsql ok
+02:39:00 [50/72] pass 3 rust pgsql ok
+02:40:54 [51/72] pass 3 java mysql ok
+02:42:48 [52/72] pass 3 python pgsql ok
+02:44:42 [53/72] pass 3 fpm mysql ok
+02:46:36 [54/72] pass 3 rr mysql ok
+02:48:30 [55/72] pass 3 ruby mysql ok
+02:50:23 [56/72] pass 3 node-http pgsql ok
+02:52:17 [57/72] pass 3 go mysql ok
+02:54:11 [58/72] pass 3 node-fastify mysql ok
+02:56:05 [59/72] pass 3 dotnet mysql ok
+02:57:59 [60/72] pass 3 node-fastify pgsql ok
+02:59:53 [61/72] pass 3 franken mysql ok
+03:01:46 [62/72] pass 3 go pgsql ok
+03:03:41 [63/72] pass 3 java pgsql ok
+03:05:35 [64/72] pass 3 dotnet pgsql ok
+03:07:29 [65/72] pass 3 fpm pgsql ok
+03:09:23 [66/72] pass 3 franken pgsql ok
+03:11:17 [67/72] pass 3 python mysql ok
+03:13:11 [68/72] pass 3 node-http mysql ok
+03:15:05 [69/72] pass 3 rr pgsql ok
+03:16:58 [70/72] pass 3 rust mysql ok
+03:18:52 [71/72] pass 3 ruby pgsql ok
+03:20:46 [72/72] pass 3 swoole mysql ok
+03:22:40 retry swoole pgsql ok
+03:24:34 retry swoole pgsql ok
+done: 220 runs recorded

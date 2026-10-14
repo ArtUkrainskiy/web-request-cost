@@ -1,0 +1,30 @@
+# Manifest of the measured objects of the series in data/raw (sha256; paths relative to the repository or ~).
+# All built before the first run of the series (16 October 2026, 23:48) and unchanged since.
+6a0a80ecdada1124d306d582e1897282b76676e9fe0b008189d21c6b688d1605  .build/php85-fpm/sapi/fpm/php-fpm
+851c202a60935752042b9d645fee03d2a0165ec7d35afb7a39c56e39b2d80511  .build/php85-fpm/sapi/cli/php
+484089446a320f1140edb35400807c2069c77bf207b16914221359baab63d175  .build/php85-zts/libs/libphp.so
+8a04c64e16bae1e2c46604e4ba2455aa5e80fcc0a631a081de8f41c5c3a6c808  .build/src/frankenphp-1.13.1/frankenphp
+5fd7f66fde7b3879f925aae49e8942145815443ac6f63e8941a6efd7ab464b60  .build/src/roadrunner-3.0.0/rr
+a1ec16b4d95822d9b690dceaafea1854dd099017cfe034ff0c89cb81a99b67be  .build/src/protobuf-5.36.2/modules/protobuf.so
+c22f078b3082b99703cc611ee91ad0d46f74de0815804c8be24d48a84d5048c5  .build/src/swoole-src-6.2.3/modules/swoole.so
+839d1bc86256bfd6610b76a264af2924057d43d4261d8d6e2f1ca40e29634219  implementations/go/blog
+c3035d32ac31fc5c8036744b9b6b5b989b164d20cd6392bdc197674d947c05d6  implementations/java/target/blog.jar
+acb91bdd1aaa52d91063c2b290c845e6c2839ab312e89e57bd53ed787152a5b5  implementations/dotnet/out/Blog.dll
+86900ce3dff3e010ce278ca9f68b6f2d1829e9a54a83f49585ce30b08ab33b60  implementations/rust/target/release/blog
+5c79925ac260becee746c56a802b054bb885299120670e39e25e67181036233e  implementations/node/package-lock.json
+c9af13266c9edb51e8b06dfbba164e21fffde07273639f873a81de0b4aa40da6  implementations/python/requirements.txt
+796c45a0af939cdfedde430a9e08e37d886f6fa7e9578d8ff920a4c315541d86  implementations/ruby/Gemfile.lock
+1415993c69594b9084ead34fe010757fc55c6d15699e8f65a66014f9c39c95e3  harness/upstream/upstream
+265e64eeafa053f66855ab5f0bcb23b6e95d84e7b716703398eb97a4e2f788d6  ~/.local/bin/wrk2
+f6536e3f9479584fa2b4a97d12c56671487be9f1011f309dc7a3b1bb0f6ea06c  /usr/bin/wrk
+# runtimes
+node v24.22.0
+openjdk version "25.0.4.1" 2026-08-18 LTS
+Microsoft.AspNetCore.App 10.0.12 and 10.0.13 installed; the app targets 10.0 and runs on the latest patch, 10.0.13
+ruby 4.0.7 (2026-09-15 revision 229531a6cf) +PRISM [x86_64-linux]
+Python 3.14.8
+go version go1.27.2 linux/amd64
+# images
+blog-runtime:26.04 sha256:8501b4ab864af5c4a1384a91b5bcef8b62c144ad23435ae9fd71c4bcaf1c6dcb
+database containers: blog-pg from postgres:17 (sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3), server 17.11; blog-mysql from mysql:8.4 (sha256:24989179f58856db763f418010c1169fecc944e3ec1ea7e921572d83eb070f70), server 8.4.11 — the server versions are in every record (dbinfo)
+nginx:1.30.5 sha256:9bf97bd7714f5e24c1ccd545ecb9eb5435cb6d109c97cebb15e7e455e0239edb

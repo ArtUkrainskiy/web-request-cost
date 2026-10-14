@@ -1,0 +1,13 @@
+17:32:06 wait=100 fpm c=100 ok
+17:33:10 wait=100 franken c=100 ok
+17:34:15 wait=100 rr c=100 ok
+17:35:19 wait=100 swoole c=100 ok
+17:36:22 wait=100 go c=100 ok
+17:37:27 wait=100 node-http c=100 ok
+17:38:31 wait=100 node-fastify c=100 ok
+17:39:35 wait=100 python c=100 ok
+17:40:39 wait=100 rust c=100 ok
+17:41:43 wait=100 ruby c=100 ok
+17:42:48 wait=100 java c=100 ok
+17:43:53 wait=100 dotnet c=100 ok
+done: 12 runs -> ~/web-request-cost/harness/results/wait100-20261017-1731.jsonl
