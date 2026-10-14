@@ -1,0 +1,10 @@
+{
+  "name": "web-request-cost-node",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "fastify": "5.12.7",
+    "mysql2": "3.24.6",
+    "pg": "8.23.1"
+  }
+}

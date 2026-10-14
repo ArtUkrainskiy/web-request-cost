@@ -1,0 +1,10 @@
+# Runtime for every stack: the same Ubuntu release as the host, so that PHP, Go and Node
+# builds mounted read-only from the host run unchanged. PgBouncer pools PostgreSQL connections for the
+# PHP stacks in the waiting series; libjemalloc2 is installed but preloaded by no stack.
+ARG UBUNTU=24.04
+FROM ubuntu:${UBUNTU}
+RUN apt-get update \
+	&& libxml=$(apt-cache show libxml2-16 >/dev/null 2>&1 && echo libxml2-16 || echo libxml2) \
+	&& DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+		libpq5 libsqlite3-0 zlib1g libstdc++6 libssl3t64 $libxml libzstd1 libargon2-1 libcurl4t64 libonig5 libreadline8t64 libsodium23 libjemalloc2 ca-certificates pgbouncer procps \
+	&& rm -rf /var/lib/apt/lists/*

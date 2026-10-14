@@ -1,0 +1,5 @@
+series variant-fpm-pgbouncer: 1 stack x db sweeps (C = 50) x 3 passes, stack on 8-11,24-27 -> ~/web-request-cost/harness/results/variant-fpm-pgbouncer-20261014-2149.jsonl
+21:49:53 [1/3] pass 1 fpm pgsql ok
+21:50:11 [2/3] pass 2 fpm pgsql ok
+21:50:29 [3/3] pass 3 fpm pgsql ok
+done: 3 runs recorded

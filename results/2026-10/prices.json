@@ -1,0 +1,26 @@
+{
+  "retrieved": "2026-10-13",
+  "aws": {
+    "note": "EC2 on-demand, Linux, us-east-1, USD per hour; data from instances.vantage.sh (aggregates the AWS price list), page timestamps 2026-10-13. Checked on 2026-10-14 against the data behind the AWS on-demand pricing page (https://aws.amazon.com/ec2/pricing/on-demand/, file https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/ec2/USD/current/ec2-ondemand-without-sec-sel/US%20East%20(N.%20Virginia)/Linux/index.json, published 2026-10-12): the same three prices.",
+    "instances": [
+      {"name": "c7i.xlarge", "vcpu": 4, "gib": 8, "usd_per_hour": 0.1785, "source": "https://instances.vantage.sh/aws/ec2/c7i.xlarge"},
+      {"name": "m7i.xlarge", "vcpu": 4, "gib": 16, "usd_per_hour": 0.2016, "source": "https://instances.vantage.sh/aws/ec2/m7i.xlarge"},
+      {"name": "r7i.xlarge", "vcpu": 4, "gib": 32, "usd_per_hour": 0.2646, "source": "https://instances.vantage.sh/aws/ec2/r7i.xlarge"}
+    ],
+    "hours_per_month": 730
+  },
+  "hetzner": {
+    "note": "Cloud, Germany/Finland, EUR per month excl. VAT and excl. IPv4; new prices for new orders and rescales from 2026-06-15 08:00 CEST. CCX = dedicated vCPU, 4 GB per vCPU.",
+    "source": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/",
+    "plans_source": "https://www.hetzner.com/cloud/general-purpose/",
+    "press_release": "https://www.hetzner.com/pressroom/standardization-and-price-adjustment-of-our-server-products/",
+    "plans": [
+      {"name": "CCX13", "vcpu": 2, "gb": 8, "eur_old": 15.99, "eur_new": 42.99},
+      {"name": "CCX23", "vcpu": 4, "gb": 16, "eur_old": 31.49, "eur_new": 85.99},
+      {"name": "CCX33", "vcpu": 8, "gb": 32, "eur_old": 62.49, "eur_new": 138.49},
+      {"name": "CCX43", "vcpu": 16, "gb": 64, "eur_old": 124.99, "eur_new": 275.99},
+      {"name": "CCX53", "vcpu": 32, "gb": 128, "eur_old": 249.99, "eur_new": 533.49},
+      {"name": "CCX63", "vcpu": 48, "gb": 192, "eur_old": 374.49, "eur_new": 853.49}
+    ]
+  }
+}
