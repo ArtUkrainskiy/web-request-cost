@@ -1,0 +1,22 @@
+diff --git a/ext/mysqlnd/mysqlnd_statistics.h b/ext/mysqlnd/mysqlnd_statistics.h
+index 02cd6445..7722bcd6 100644
+--- a/ext/mysqlnd/mysqlnd_statistics.h
++++ b/ext/mysqlnd/mysqlnd_statistics.h
+@@ -26,12 +26,15 @@
+ #define MYSQLND_STATS_UNLOCK(stats)
+ #endif
+ 
++#ifdef ZTS
++#define MYSQLND_STATS_UPDATE_VALUE(stats, statistic, value) \
++	__atomic_fetch_add(&(stats)->values[(statistic)], (value), __ATOMIC_RELAXED)
++#else
+ #define MYSQLND_STATS_UPDATE_VALUE(stats, statistic, value) \
+ 	{ \
+-			MYSQLND_STATS_LOCK(stats); \
+ 			(stats)->values[(statistic)] += (value); \
+-			MYSQLND_STATS_UNLOCK(_p_s); \
+ 	}
++#endif
+ 
+ #define MYSQLND_DEC_STATISTIC(enabler, stats, statistic) \
+  { \

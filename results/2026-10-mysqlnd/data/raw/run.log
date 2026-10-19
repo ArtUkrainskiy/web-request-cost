@@ -1,0 +1,38 @@
+start 2026-10-19T18:48:31+03:00 passes=3 libphp 484089446a320f11 atomic d72711c178dfeba0
+pass 1
+18:48:49 memory stats-on ok
+pass 1
+18:49:06 memory stats-off ok
+pass 1
+18:49:23 memory atomic-on ok
+pass 1
+18:51:17 rate stats-on ok
+pass 1
+18:53:11 rate stats-off ok
+pass 1
+18:55:05 rate atomic-on ok
+pass 2
+18:55:22 memory atomic-on ok
+pass 2
+18:55:40 memory stats-off ok
+pass 2
+18:55:57 memory stats-on ok
+pass 2
+18:57:51 rate atomic-on ok
+pass 2
+18:59:45 rate stats-off ok
+pass 2
+19:01:39 rate stats-on ok
+pass 3
+19:01:56 memory stats-on ok
+pass 3
+19:02:14 memory stats-off ok
+pass 3
+19:02:31 memory atomic-on ok
+pass 3
+19:04:25 rate stats-on ok
+pass 3
+19:06:19 rate stats-off ok
+pass 3
+19:08:13 rate atomic-on ok
+done 2026-10-19T19:08:13+03:00
