@@ -1,0 +1,3 @@
+series drivers-dotnet-pgsql: 1 stack x db sweeps (C = 50) x 1 passes, stack on 8-11,24-27 -> results/drivers-dotnet-pgsql-20261022-0107.jsonl
+01:08:25 [1/1] pass 1 dotnet pgsql ok
+done: 1 runs recorded
